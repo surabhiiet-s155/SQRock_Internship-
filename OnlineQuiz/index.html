@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#173a33">
+    <meta name="description" content="Find your next opportunity with JobPortal. Search jobs and connect with great teams.">
+    <title>JobPortal — Find your next opportunity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles.css">
+    <script src="/assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="site-header">
+    <a class="brand" href="/" aria-label="JobPortal home">
+        <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M8 7V5.8A1.8 1.8 0 0 1 9.8 4h4.4A1.8 1.8 0 0 1 16 5.8V7M4 9.2A2.2 2.2 0 0 1 6.2 7h11.6A2.2 2.2 0 0 1 20 9.2v8.6a2.2 2.2 0 0 1-2.2 2.2H6.2A2.2 2.2 0 0 1 4 17.8V9.2Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 12h16m-10 0v2h4v-2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span>Job<span class="brand-accent">Portal</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link is-active" href="#home">Home</a>
+        <a class="nav-link" href="#jobs">Jobs</a>
+        <a class="nav-link" href="#how-it-works">How it works</a>
+    </nav>
+    <div class="header-actions">
+        <span class="signed-in-label" id="signedInLabel" hidden></span>
+        <button class="button button-outline button-small" id="loginOpen">Sign in</button>
+        <button class="button button-outline button-small" id="logoutButton" hidden>Sign out</button>
+    </div>
+</header>
+
+<main id="main-content">
+    <section class="hero" id="home">
+        <div class="hero-glow hero-glow-one"></div>
+        <div class="hero-glow hero-glow-two"></div>
+        <div class="hero-content">
+            <span class="eyebrow"><span class="eyebrow-dot"></span> YOUR NEXT CHAPTER STARTS HERE</span>
+            <h1>Find your dream<br><span class="text-gradient">job today.</span></h1>
+            <p class="hero-copy">Discover opportunities that match your ambition. Find the right role, meet great teams, and make your next move.</p>
+            <form class="search-bar" id="searchForm">
+                <label class="search-field">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4.2 4.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                    <input id="keywordInput" type="search" placeholder="Job title or keyword" aria-label="Job title or keyword">
+                </label>
+                <span class="search-divider"></span>
+                <label class="search-field location-field">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="2.2" stroke="currentColor" stroke-width="1.8"/></svg>
+                    <input id="locationInput" type="search" placeholder="City or remote" aria-label="City or remote">
+                </label>
+                <button class="button button-primary search-button" type="submit">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4.2 4.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                    Search jobs
+                </button>
+            </form>
+            <div class="hero-proof">
+                <span class="proof-item"><span class="proof-check" aria-hidden="true">✓</span> Explore roles that fit</span>
+                <span class="proof-divider"></span>
+                <span class="proof-item"><span class="proof-check" aria-hidden="true">✓</span> Apply when you’re ready</span>
+            </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+            <div class="hero-orbit hero-orbit-one"></div>
+            <div class="hero-orbit hero-orbit-two"></div>
+            <div class="hero-art-card">
+                <span class="hero-art-kicker"><span></span> YOUR NEXT CHAPTER</span>
+                <div class="hero-art-illustration">
+                    <div class="illustration-sun"></div>
+                    <div class="illustration-hill illustration-hill-back"></div>
+                    <div class="illustration-hill illustration-hill-front"></div>
+                    <div class="illustration-path"></div>
+                    <span class="illustration-star illustration-star-one">✳</span>
+                    <span class="illustration-star illustration-star-two">✦</span>
+                </div>
+                <div class="hero-art-footer">
+                    <div><strong>A fresh start looks good on you.</strong><span>Find a role that feels like you.</span></div>
+                    <span class="hero-art-arrow">↗</span>
+                </div>
+            </div>
+            <div class="float-note float-note-top"><span class="float-note-icon">✳</span><span>Find your fit</span></div>
+            <div class="float-note float-note-bottom"><span class="float-note-check">✓</span><span>Make your next move</span></div>
+        </div>
+    </section>
+
+    <section class="jobs-section section-wrap" id="jobs">
+        <div class="section-heading">
+            <div>
+                <span class="eyebrow eyebrow-blue">CURATED FOR YOU</span>
+                <h2>Featured opportunities</h2>
+                <p class="section-subtitle">Great roles from teams doing meaningful work.</p>
+            </div>
+            <div class="jobs-toolbar">
+                <span class="result-count" id="jobCount">Loading jobs…</span>
+                <label class="select-wrap">
+                    <span class="visually-hidden">Sort jobs</span>
+                    <select id="sortJobs" aria-label="Sort jobs">
+                        <option value="recent">Most recent</option>
+                        <option value="title">Job title</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+        <div class="job-grid" id="jobGrid" aria-live="polite">
+            <div class="loading-card">Finding your next opportunity…</div>
+        </div>
+        <div class="empty-state" id="emptyJobs" hidden>
+            <span class="empty-icon">⌕</span>
+            <h3>No matching roles</h3>
+            <p>Try another keyword or location to see more opportunities.</p>
+        </div>
+    </section>
+
+    <section class="dashboard-section section-wrap" id="dashboardSection" hidden>
+        <div class="section-heading dashboard-heading">
+            <div>
+                <span class="eyebrow eyebrow-blue">YOUR SPACE</span>
+                <h2 id="dashboardTitle">Your dashboard</h2>
+                <p class="section-subtitle" id="dashboardSubtitle"></p>
+            </div>
+            <button class="button button-outline" id="browseJobsButton">Explore jobs</button>
+        </div>
+        <div id="dashboardContent"></div>
+    </section>
+
+    <section class="how-section" id="how-it-works">
+        <div class="section-wrap how-inner">
+            <div class="how-heading">
+                <span class="eyebrow eyebrow-blue">A BETTER WAY TO MOVE FORWARD</span>
+                <h2>Good things happen<br>when the fit is right.</h2>
+                <p>Whether you are searching for your next role or building a team, your next step starts here.</p>
+                <button class="button button-primary" id="howLoginButton">Get started <span aria-hidden="true">→</span></button>
+            </div>
+            <div class="steps-grid">
+                <article class="step-card">
+                    <span class="step-number">01</span>
+                    <span class="step-icon">⌕</span>
+                    <h3>Discover</h3>
+                    <p>Explore roles and teams that line up with what matters to you.</p>
+                </article>
+                <article class="step-card">
+                    <span class="step-number">02</span>
+                    <span class="step-icon">↗</span>
+                    <h3>Connect</h3>
+                    <p>Apply with confidence and let great opportunities find you.</p>
+                </article>
+                <article class="step-card">
+                    <span class="step-number">03</span>
+                    <span class="step-icon">✳</span>
+                    <h3>Grow</h3>
+                    <p>Keep track of your progress and take your next step forward.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <a class="brand footer-brand" href="/">
+        <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M8 7V5.8A1.8 1.8 0 0 1 9.8 4h4.4A1.8 1.8 0 0 1 16 5.8V7M4 9.2A2.2 2.2 0 0 1 6.2 7h11.6A2.2 2.2 0 0 1 20 9.2v8.6a2.2 2.2 0 0 1-2.2 2.2H6.2A2.2 2.2 0 0 1 4 17.8V9.2Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 12h16m-10 0v2h4v-2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span>Job<span class="brand-accent">Portal</span></span>
+    </a>
+    <span>© <span id="year"></span> JobPortal. A brighter way to find your next role.</span>
+    <a class="footer-top" href="#home">Back to top ↑</a>
+</footer>
+
+<div class="modal-backdrop" id="loginModal" hidden>
+    <section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+        <button class="modal-close" id="loginClose" aria-label="Close login dialog">×</button>
+        <div class="modal-brand brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M8 7V5.8A1.8 1.8 0 0 1 9.8 4h4.4A1.8 1.8 0 0 1 16 5.8V7M4 9.2A2.2 2.2 0 0 1 6.2 7h11.6A2.2 2.2 0 0 1 20 9.2v8.6a2.2 2.2 0 0 1-2.2 2.2H6.2A2.2 2.2 0 0 1 4 17.8V9.2Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 12h16m-10 0v2h4v-2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <span class="eyebrow eyebrow-blue">WELCOME TO JOBPORTAL</span>
+        <h2 id="loginTitle">Good to have you here.</h2>
+        <p class="modal-copy">Choose your account type to get to the right place.</p>
+        <div class="role-options" role="radiogroup" aria-label="Choose account type">
+            <button class="role-option is-selected" type="button" data-role="ROLE_CANDIDATE" aria-pressed="true">
+                <span class="role-icon">♙</span><span><strong>Job seeker</strong><small>Find your next opportunity</small></span><span class="role-check">✓</span>
+            </button>
+            <button class="role-option" type="button" data-role="ROLE_EMPLOYER" aria-pressed="false">
+                <span class="role-icon">▣</span><span><strong>Job provider</strong><small>Build your next great team</small></span><span class="role-check">✓</span>
+            </button>
+            <button class="role-option" type="button" data-role="ROLE_ADMIN" aria-pressed="false">
+                <span class="role-icon">⚙</span><span><strong>Administrator</strong><small>Manage the JobPortal community</small></span><span class="role-check">✓</span>
+            </button>
+        </div>
+        <form id="loginForm" class="login-form">
+            <label>Email address
+                <input id="emailInput" type="email" autocomplete="username" placeholder="you@example.com" required>
+            </label>
+            <label>Password
+                <input id="passwordInput" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+            </label>
+            <p class="form-error" id="loginError" role="alert" hidden></p>
+            <button class="button button-primary modal-submit" id="loginSubmit" type="submit">Sign in <span aria-hidden="true">→</span></button>
+        </form>
+        <div class="demo-login">
+            <span class="demo-label">TRY A DEMO ACCOUNT</span>
+            <div class="demo-buttons">
+                <button type="button" data-demo="candidate">Job seeker</button>
+                <button type="button" data-demo="employer">Provider</button>
+                <button type="button" data-demo="admin">Admin</button>
+            </div>
+            <p>Sample accounts are ready to explore. No registration needed.</p>
+        </div>
+    </section>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
